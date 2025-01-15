@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button onclick="toggleColorsPanel()"> colors </button>
+    <button onclick="toggleColorsPanel()">Colors</button>
 
     <div class="container">
         <div class="color-box" id="colorBox">
@@ -20,6 +20,17 @@
         </div>
         <h5 id="errorMessage">Wrong color code!</h5>
         <p id="suggestionMessage"></p>
+    </div>
+
+    <div class="slider-container">
+        <label for="redSlider">Red: <span id="redValue">128</span></label>
+        <input type="range" id="redSlider" min="0" max="255" value="128" oninput="updateColorFromSliders()">
+
+        <label for="greenSlider">Green: <span id="greenValue">128</span></label>
+        <input type="range" id="greenSlider" min="0" max="255" value="128" oninput="updateColorFromSliders()">
+
+        <label for="blueSlider">Blue: <span id="blueValue">128</span></label>
+        <input type="range" id="blueSlider" min="0" max="255" value="128" oninput="updateColorFromSliders()">
     </div>
 
     <div class="colors-panel" id="colorsPanel">
