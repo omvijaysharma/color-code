@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Code Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button onclick="toggleColorsPanel()"> colors </button>
+
+    <div class="container">
+        <div class="color-box" id="colorBox">
+            <input 
+                type="text" 
+                id="colorInput" 
+                placeholder="Enter Color Code" 
+                maxlength="7" 
+                oninput="validateAndChangeColor()" />
+        </div>
+        <h5 id="errorMessage">Wrong color code!</h5>
+        <p id="suggestionMessage"></p>
+    </div>
+
+    <div class="colors-panel" id="colorsPanel">
+        <h3>Color Examples</h3>
+        <ul>
+            <li style="background-color: #FF5733;">#FF5733</li>
+            <li style="background-color: #33FF57;">#33FF57</li>
+            <li style="background-color: #5733FF;">#5733FF</li>
+            <li style="background-color: #FF33A1;">#FF33A1</li>
+            <li style="background-color: #33FFF0;">#33FFF0</li>
+            <li style="background-color: #F0FF33;">#F0FF33</li>
+            <li style="background-color: #000000;">#000000</li>
+            <li style="background-color: #FFFFFF; color: #000;">#FFFFFF</li>
+            <li style="background-color: #C70039;">#C70039</li>
+            <li style="background-color: #900C3F;">#900C3F</li>
+            <li style="background-color: #581845;">#581845</li>
+            <li style="background-color: #FFC300;">#FFC300</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
