@@ -50,13 +50,9 @@ h5, p {
     visibility: hidden;
 }
 
-h5 {
-    color: #e74c3c;
-}
+h5 {color: #e74c3c;}
 
-p {
-    color: #3498db;
-}
+p {color: #3498db;}
 
 /* Colors Panel */
 .colors-panel {
